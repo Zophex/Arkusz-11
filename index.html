@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkusz 11</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main, footer, aside, section {
+            border: 1px solid #333;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+        }
+  
+        main {
+            flex-grow: 1; 
+            display: flex;
+            background-color: #fff;
+            padding: 5px;
+            margin: 5px;
+        }
+        footer {
+            background-color: #b8b8b8;
+            min-height: 50px;
+        }
+        
+        aside {
+            width: 30%; 
+            background-color: #ffe0b2;
+        }
+       
+        .sections-container {
+            flex: 1; 
+            display: flex;
+            flex-direction: column; 
+            padding: 0;
+            border: none;
+            margin: 0 0 0 5px; 
+        }
+        section {
+            flex: 1; 
+            min-height: 150px;
+            background-color: #e0f2f1;
+            margin: 5px 0; 
+        }
+   
+        .sections-container section:first-child {
+            margin-top: 0;
+        }
+        .sections-container section:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        
+        <aside>
+            <h2>Blok boczny </h2>
+            <p>Treści poboczne lub dodatkowe.</p>
+        </aside>
+
+        <div class="sections-container">
+            
+            <section id="sekcja1">
+                <h2>Sekcja 1 </h2>
+                <p>Główna treść górna.</p>
+                <a href="https://zophex.github.io/Strona/">Powrót</a>
+            </section>
+
+            <section id="sekcja2">
+                <h2>Sekcja 2 </h2>
+                <p>Główna treść dolna.</p>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Blok stopki</p>
+        </footer>
+
+</body>
+</html>
